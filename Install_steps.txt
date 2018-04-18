@@ -1,0 +1,17 @@
+#############################################################
+
+gdisk
+
+gdisk /dev/sdx 
+gdisk n //create new partition assuming its a clean disk
+
+Using the following:
+
+550Mb EFI /boot partition  //gdisk code EF00
+40GB /root partition //gdisk code 8304
+160GB /home parition //gdisk code 8302
+32GB /swap //gdisk code 8200
+
+##########################################################
+
+Setup LUKS encription on the /root partition 
